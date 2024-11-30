@@ -1,0 +1,219 @@
+﻿﻿ /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+    overflow: auto;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 50px;
+    overflow: auto
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+/* background
+    -------------------------------------------------- */
+.background-image {
+    background-image: url('../images/fundoamarelo.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FAF09B;
+    position: relative;
+}
+
+  
+    .background-image::before {
+        content: "";
+ 
+    }
+
+    .background-image h1, .background-image p {
+        position: relative; 
+        z-index: 2;  
+    }
+
+    .background-image h1 {
+        font-size: 4rem;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .background-image p {
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 20px;  
+        right: 20px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    /* carousel*/
+.carousel-item {
+    bottom: 0px;
+    height: 350px;
+    z-index: 10;
+    overflow-x: hidden;
+}
+
+    .carousel-item img {
+        object-fit: cover; 
+        height: 100%;        
+        width: 100%;
+       
+    }
+
+    /* linkedin button*/
+.linkedin-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.linkedin-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+    .linkedin-button:hover {
+        transform: scale(1.1);
+    }
+
+.linkedin-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.linkedin-button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+/*site*/
+body {
+    overflow: auto !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FAF09B;
+}
+ 
+/*pdf button*/
+ 
+.pdf-button-container {
+    text-align: right; 
+    margin-top: 20px;
+}
+
+ 
+.pdf-download-icon {
+    font-size: 2rem; 
+    color: #0366d6;  
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+     
+    .pdf-download-icon:hover {
+        color: #ff5722; 
+    }
+
+ /* 404 */
+
+html {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+#svgContainer {
+    width: 640px;
+    height: 512px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}

@@ -1,0 +1,80 @@
+﻿@model LigaNOS.Data.Entities.Match
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-warning">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}
+
+<h3>Are you sure you want to delete ?</h3>
+<p></p>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-warning">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}
+
+<dl class="row">
+   <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.HomeClub)
+       </dt>
+        <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.HomeClub.Name)
+        </dd>
+        <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.AwayClub)
+        </dt>
+        <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.AwayClub.Name)
+        </dd>
+        <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.HomeGoals)
+        </dt>
+        <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.HomeGoals)
+        </dd>
+        <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.AwayGoals)
+        </dt>
+        <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.AwayGoals)
+        </dd>
+        <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.MatchDay)
+        </dt>
+        <dd class="col-sm-10">
+        @Model.MatchDay.ToString("dd/MM/yyyy")
+        </dd>
+        <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.MatchTime)
+        </dt>
+        <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.MatchTime)
+        </dd>
+        <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Stadium)
+        </dt>
+        <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Stadium)
+        </dd>
+
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-success">Back to List</a>
+    </form>
+    </div>
